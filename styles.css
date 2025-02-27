@@ -19,12 +19,6 @@
 }
   /* Header */
   /* Hero Section */
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px 20px;
-    text-align: center;
-  }
   
   .hero-content h1 {
     font-family: 'Orbitron', sans-serif;
@@ -32,6 +26,21 @@
     margin-bottom: 20px;
     text-shadow: 0 0 10px #a6221b, 0 0 20px #a6221b;
   }
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: center;
+    margin-top: -70px; /* Adjust this value as needed */
+    padding-top: 0;
+  }
+
+  .hero-content img {
+    margin-top: -15px; /* Adjust this value as needed */
+    margin-bottom: -15px;
+    display: block; /* Ensures no extra space from inline elements */
+}
   
   .hero-content .highlight {
     font-size: 100px;
