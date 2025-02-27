@@ -1,0 +1,71 @@
+<section id="sponsors" class="sponsors">
+    <h2>Our Galactic Sponsors</h2>
+    <div style="height: 20px;"></div>
+    <div class="sponsor-grid">
+      <div class="sponsor-card">
+        <img src="https://via.placeholder.com/150" alt="Sponsor 1">
+        <h3>Sponsor 1</h3>
+      </div>
+      <div class="sponsor-card">
+        <img src="https://via.placeholder.com/150" alt="Sponsor 2">
+        <h3>Sponsor 2</h3>
+      </div>
+      <div class="sponsor-card">
+        <img src="https://via.placeholder.com/150" alt="Sponsor 3">
+        <h3>Sponsor 3</h3>
+      </div>
+    </div>
+    
+  </section>
+
+  <div style="height: 40px;"></div>
+    <div class="download-container">
+      <a href="event-details.pdf" download class="cta-button">Download Rule Book</a>
+    </div>
+
+    <script>
+      function createStars() {
+          // Clear any existing stars
+          document.body.innerHTML = '';
+          
+          // Create stars with different sizes
+          createStarGroup(500, 'small');   // Lots of tiny stars
+          createStarGroup(100, 'medium');  // Medium stars
+          createStarGroup(50, 'large');    // Few large stars
+      }
+  
+      function createStarGroup(count, size) {
+          for (let i = 0; i < count; i++) {
+              const star = document.createElement('div');
+              star.className = `star ${size}`;
+              
+              // Random position
+              star.style.left = `${Math.random() * 100}%`;
+              star.style.top = `${Math.random() * 100}%`;
+              
+              // Random animation delay
+              star.style.animationDelay = `${Math.random() * 5}s`;
+              
+              document.body.appendChild(star);
+          }
+      }
+  
+      // Initial creation
+      createStars();
+  
+      // Recreate stars on window resize
+      // <h1 class="highlight">EMPULSE 2025</h1>
+      window.addEventListener('resize', createStars);
+  
+      window.onload = function() {
+        const poster = document.getElementById("poster");
+        poster.style.animation = "fadeInZoom 1.5s ease-in-out forwards";
+    };
+  
+  </script>
+
+  <div class="galaxy-background">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
