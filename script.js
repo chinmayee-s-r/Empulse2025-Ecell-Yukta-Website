@@ -53,3 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.from(".hero-content h1", { opacity: 0, y: 50, duration: 1, ease: "power3.out", stagger: 0.3 });
+  gsap.from(".hero-content img", { opacity: 0, scale: 0.8, duration: 1.2, ease: "back.out(1.7)", delay: 0.5 });
+  gsap.from(".hero-content p", { opacity: 0, y: 30, duration: 1, ease: "power3.out", delay: 0.8 });
+  gsap.from(".cta-button", { opacity: 0, scale: 0.9, duration: 1, ease: "elastic.out(1, 0.5)", delay: 1.2 });
+});
